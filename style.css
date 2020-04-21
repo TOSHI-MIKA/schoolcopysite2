@@ -1,0 +1,881 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* パソコンで見たときは"sp"のクラスがついた画像が表示される */
+.pc {display: block !important;}
+.sp {display: none !important;}
+
+/* スマートフォンで見たときは"sp"のクラスがついた画像が表示される */
+@media screen and (max-width:768px) {
+.pc {display: none !important;}
+.sp {display: block !important;
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+}
+
+.course-flow{
+  padding-top: 650px !important ;
+
+}
+.content{
+
+font-size: 30px;
+
+}
+
+}
+
+/*--------------------
+ 吹き出しを作る
+--------------------*/
+.balloon {
+  margin-bottom: 2em;
+  position: relative;
+  }
+  .balloon:before,.balloon:after {
+  clear: both;
+  content: "";
+  display: block;
+  }
+  .balloon figure {
+  width: 60px;
+  height: 60px;
+  }
+  .balloon-image-left {
+  float: left;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  }
+  .balloon-image-right {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  }
+  .balloon figure img {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50%;
+  margin: 0;
+  }
+  .balloon-image-description {
+  padding: 5px 0 0;
+  font-size: 18px;
+  text-align: center;
+  }
+  .balloon-text-right,.balloon-text-left {
+  position: relative;
+  padding: 10px;
+  margin-top: 20px;
+  
+  border-radius: 10px;
+  max-width: -webkit-calc(100% - 120px);
+  max-width: calc(100% - 120px);
+  display: inline-block;
+  }
+  .balloon-text-right {
+  margin-left: 70px;
+  background-color: #F8F7F2;
+  margin-bottom: 10px;
+  }
+ 
+  .balloon-text-right {
+  float: left;
+  }
+  .balloon-text-left {
+  float: right;
+  }
+  .balloon p {
+  margin: 0 0 20px;
+  }
+  .balloon p:last-child {
+  margin-bottom: 0;
+  }
+  /* 三角部分 */
+  .balloon-text-right:before {
+  position: absolute;
+  content: '';
+  border: none;
+  border-right: 10px solid;
+  top: 15px;
+  left: -20px;
+  }
+  .balloon-text-right:after {
+  position: absolute;
+  content: '';
+  border: none;
+  border-right: 10px solid;
+  top: 15px;
+  left: -19px;
+  }
+  .balloon-text-left:before {
+  position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  border-left: 10px solid;
+  top: 15px;
+  right: -20px;
+  }
+  .balloon-text-left:after {
+  position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  border-left: 10px solid;
+  top: 15px;
+  right: -19px;
+  }
+
+/* ヘッダー */
+.video{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: auto;
+  width: auto;
+  height: auto;
+  top: 0;
+  z-index: -100;
+  background-size: cover;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+header{
+
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+header .container {
+  position: relative;
+}
+
+
+.home header {
+    height: 580px;
+}
+
+
+
+
+.contents{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  padding-top: 200px;
+  text-align: center;
+  width:700px;
+  height: 700px;
+}
+
+/* ヘッダー */
+
+/* フォーム */
+
+
+
+/* フッター */
+footer{
+
+height: 300px;
+max-width: 100%;
+width: auto;
+background-color:#2B3F43;
+text-align: center;
+
+}
+
+.r-footer{
+
+  color: turquoise;
+}
+
+.bottom-footer{
+  color: darkgrey;
+}
+
+.course-flow{
+
+  text-align: center;
+
+}
+
+
+
+/* Footer */
+
+#footer {
+  color: #949494;
+  padding: 4em 0;
+  text-align: center;
+}
+
+  #footer .icons {
+    margin: 0 0 4em 0;
+  }
+
+  #footer .menu a {
+    color: inherit;
+  }
+
+  #footer .copyright {
+    font-size: 0.8em;
+  }
+
+
+
+/* List */
+
+
+
+ li {
+    padding-left: 0.25em;
+  }
+
+ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+
+  ul li {
+    padding-left: 0.5em;
+  }
+
+  ul.alt {
+    list-style: none;
+    padding-left: 0;
+  }
+
+    ul.alt li {
+      border-top: solid 1px rgba(144, 144, 144, 0.25);
+      padding: 0.5em 0;
+    }
+
+      ul.alt li:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+  ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+  }
+
+    ul.icons li {
+      display: inline-block;
+      padding: 0 1.25em 0 0;
+    }
+
+      ul.icons li:last-child {
+        padding-right: 0 !important;
+      }
+
+      
+
+
+  ul.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+  }
+
+    ul.actions li {
+      display: inline-block;
+      padding: 0 1em 0 0;
+      vertical-align: middle;
+    }
+
+      ul.actions li:last-child {
+        padding-right: 0;
+      }
+
+    ul.actions.small li {
+      padding: 0 0.5em 0 0;
+    }
+
+    ul.actions.vertical li {
+      display: block;
+      padding: 1em 0 0 0;
+    }
+
+      ul.actions.vertical li:first-child {
+        padding-top: 0;
+      }
+
+      ul.actions.vertical li > * {
+        margin-bottom: 0;
+      }
+
+    ul.actions.vertical.small li {
+      padding: 0.5em 0 0 0;
+    }
+
+      ul.actions.vertical.small li:first-child {
+        padding-top: 0;
+      }
+
+    ul.actions.fit {
+      display: table;
+      margin-left: -1em;
+      padding: 0;
+      table-layout: fixed;
+      width: calc(100% + 1em);
+    }
+
+      ul.actions.fit li {
+        display: table-cell;
+        padding: 0 0 0 1em;
+      }
+
+        ul.actions.fit li > * {
+          margin-bottom: 0;
+        }
+
+      ul.actions.fit.small {
+        margin-left: -0.5em;
+        width: calc(100% + 0.5em);
+      }
+
+        ul.actions.fit.small li {
+          padding: 0 0 0 0.5em;
+        }
+
+  ul.menu {
+    line-height: 1em;
+    list-style: none;
+    padding: 0;
+  }
+
+    ul.menu li {
+      display: inline-block;
+      margin-left: 1em;
+      padding-left: 1em;
+    }
+
+      ul.menu li:first-child {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+
+
+
+
+/* フッター */
+
+
+/* ★ボディ★ */
+
+.center-sentence{
+  text-align: center;
+}
+
+
+.ps-small{
+
+  font-size: 8px;
+}
+
+
+/* バンクーバーってどんな街？ */
+
+.about-vancouver{
+
+background-image:url(./images/vancouvertown.jpg);
+min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 800px;
+  top: 0;
+  z-index: -100;
+  background-size: cover;
+  color: white;
+
+}
+
+/* バンクーバーってどんな街？ */
+
+/* カリキュラム */
+
+.curriculum{
+
+background-color: white;
+}
+
+/* カリキュラム */
+
+/* 英会話講座 */
+
+
+/* 英会話講座 */
+
+
+/* バンクーバーで見つける、新しい自分。 */
+
+.find-yourself-in-vancouver{
+
+  background-image:url(./images/thumb2-vancouver-skyscrapers-sunset-megalopolis-british-columbia.png);
+  min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 320px;
+    top: 0;
+    z-index: -100;
+    background-size: cover;
+    color: white;
+  
+  }
+/* バンクーバーで見つける、新しい自分。 */
+
+
+/* 受講者の声 */
+
+.balloon figure {
+  width: 150px;
+  height: 150px;
+}
+
+/* 受講者の声 */
+
+/* 講師紹介 */
+
+.teacher{
+  background-color:#F8F7F2;
+
+}
+
+.teacher-p{
+  text-align: center;
+}
+
+/* 講師紹介 */
+
+
+/* 受講までのステップ */
+
+.steps{
+
+  background-color: white;
+}
+
+/* 受講までのステップ */
+
+
+/* 自信を持って帰国しよう。*/
+.trust-yourself{
+
+  background-image:url(./images/airplane.jpeg);
+  min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 320px;
+    top: 0;
+    z-index: -100;
+    background-size: cover;
+    color: white;
+
+  }
+
+/* 自信を持って帰国しよう。 */
+
+
+/* これから必要とされるのは、グローバルに活躍できるあなた */
+.future{
+
+}
+
+audio{
+
+max-width: 100%;
+width: 1000px !important;
+
+}
+/* これから必要とされるのは、グローバルに活躍できるあなた */
+
+/* 価格 */
+
+.price{
+
+  background-color:#F8F7F2 !important;
+
+  }
+
+
+.b-number{
+
+font-size:  2em;;
+}
+
+.b-green{
+
+background-color: #6FC173;
+color: white;
+}
+
+.n-number{
+  color: white;
+}
+
+.border-gray{
+
+color: #cccccc;
+
+}
+/* 価格 */
+
+
+/* よくある質問 */
+
+.questions{
+
+background-color: white;
+
+}
+
+/* よくある質問 */
+
+
+/* フォーム */
+
+.formrun{
+
+background-color: #F8F7F2;
+
+}
+
+
+/*--------------------------------------
+テキスト
+---------------------------------------*/
+
+.msr_text_05 {
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+.msr_text_05 label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 100%;
+}
+.msr_text_05 input[type=text] {
+  background: #fff;
+  border: 1px solid #E6E6D1;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 14px;
+  padding: auto ;
+  height: 40px;
+  width: 350px;
+  max-width: 100%;
+}
+
+
+
+
+/*--------------------------------------
+プルダウン
+---------------------------------------*/
+
+.msr_pulldown_05 {
+  padding-bottom: 20px;
+  position: relative;
+  width: auto;
+  max-width: 100%;
+}
+.msr_pulldown_05 p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_pulldown_05 select {
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  background:#FFFFFF;
+  border: 1px solid  #E6E6D1;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+  position:relative;
+  height: 40px;
+  width: 350px;
+  max-width: 100%;
+}
+.msr_pulldown_05 label{
+  position:relative;
+  max-width: 100%;
+}
+.msr_pulldown_05 label::after {
+  content:"";
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
+  right: 16px;
+  height: 8px;
+  margin-top: -5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position:absolute;
+  top:50%;
+  width: 8px;
+  max-width: 100%;
+}
+
+
+/*--------------------------------------
+テキストエリア
+---------------------------------------*/
+
+.msr_textarea_05 {
+  padding-bottom: 10px;
+  width: auto;
+}
+.msr_textarea_05 label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_textarea_05 textarea {
+  border: 1px solid #E6E6D1;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 13px;
+  padding: 10px;
+  height: 150px;
+  width: 520px;
+  max-width: 100%;
+}
+
+/*--------------------------------------
+送信ボタン
+---------------------------------------*/
+
+.btn{
+
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+  
+  }
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background: #6FC173;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #489F49;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.btn-square-bg{
+  display: inline-block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background: #6FC173;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #489F49;
+  border-radius: 3px;
+  text-align: center;
+  background-position: center;
+  font-size: 25px;
+
+}
+
+.btn-square:hover {
+  /*ボタンをのせたとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.btn-square-bg:hover{
+  /*ボタンをのせたとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+
+/* フォーム */
+
+
+
+/* ★ボディ★ */
+
+li{
+text-align: center;
+
+}
+
+
+
+.b-mini{
+
+  width: 20%;
+margin: 0 auto;
+
+}
+
+.s-letter{
+
+font-size: small;
+
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:768px) {
+
+  .navbar{
+    justify-content: space-between;
+  }
+
+
+  .balloon figure {
+    width: 150px;
+    height: 150px;
+}
+
+figure {
+  margin: 0 auto 1rem;
+}
+
+.balloon{
+
+  float: none;
+  clear: both;
+}
+
+.balloon-image-left{
+
+  float: none;
+  clear: both;
+  margin-right: auto;
+} 
+
+.balloon-text-right{
+
+  float: none;
+  clear: both;
+  margin-left: 0;
+} 
+
+.balloon-text-right:before{
+  content: none;
+}
+.balloon-text-right:after{
+  content: none;
+  border: none;
+}
+
+.balloon-text-right, .balloon-text-left {
+  position: relative;
+  padding: 10px;
+
+  border-radius: 10px;
+  /* max-width: -webkit-calc(100% - 120px); */
+  max-width: calc(400% - 120px);
+  display: inline-block;
+}
+
+.balloon-text-right::after .balloon-text-right::before {
+  display: none;
+}
+
+.balloon-image-description {
+  padding: 5px 0 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+.btn-square{
+  width: 100%;
+  padding: 7px 45px;
+  left: 0%;
+}
+
+
+.btn-square-bg{
+  width: 100%;
+  padding: 7px 45px;
+  left: 0%;
+}
+
+  .video{
+    height: 580px !important;
+    width: auto !important;
+    max-width: auto !important;
+  }
+
+  .teacher .students{
+    text-align:center ;
+  }
+
+  .feature .feature-box .box-inner{
+    padding: 0px 15px;
+  }
+  .kind-box .box-inner{
+    padding: 0px 25px;
+  }
+  .cameleon-back .inner .content h1{
+    font-size: 35px;
+    padding: 0px 20px;
+  }
+  .breeding .content .breeding-box .box-inner{
+    padding: 20px 25px;
+  }
+  .comments .comment{
+    display: block;
+    margin-bottom: 30px;
+    width: 80%;
+    margin: 0px auto 30px;
+  }
+  .comments .comment .text{
+    min-height: 120px;
+  }
+
+  .media{
+
+ text-align: center;
+ display: block;
+
+  }
+
+
+/* ★ヘッダー  */
+
+
+
+
+
+}
